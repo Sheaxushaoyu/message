@@ -1,11 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .biank {
+      background-color: rgb(255, 255, 255);
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .flex {
+      display: flex;
+    }
+    body {
+      margin: 0;
+      /* vh 是view height 既视窗高度的意思，100就是100%占满窗口高度 */
+      height: 100vh;
+      background-color: #cbc5c5eb;
+    }
+    .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .press{
+        background-color: rgb(255, 255, 255);
+        border-top-style: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: #fc0000;
+        border-bottom-width: 5px;
+      }
+      .xuanzhong{
+        background-color: #cbc5c5eb;
+      }
+      .baiSe {
+        background-color: #ffffff
+      }
+       .shuJu {
+        height: 430px;
+      }
+       .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .lieBiaoXiang {
+        height: 200px;
+      }
+      .flex {
+        display: flex;
+      }
+      @media (max-width: 600px)  {}
+
+        .press {
+          flex-direction: column;
+      }
+  </style>
   <body>
-    大家好大家好，我是联系板块
+    <!--头部栏-->
+    <div class="biank flex1 flex yinYing" style="height: 100px; width: 1700px">
+      <img
+        alt="logo"
+        src="https://s21.ax1x.com/2024/07/15/pk5cwhq.jpg"
+        width="70px"
+        height="70px"
+        style="margin: 15px"
+      />
+      <div
+        style="
+          margin-left: 10px;
+          margin-top: 35px;
+          font-size: 20px;
+          width: 250px;
+        "
+      >
+        许少煜的个人网页<br />Shea's Website
+      </div>
+      <audio
+        controls
+        style="margin-top: 50px; margin-left: 10px"
+        autoplay="autoplay"
+        controls="controls"
+        loop="true"
+      >
+        <source
+          src="https://dlink.host/musics/aHR0cHM6Ly9vbmVkcnYtbXkuc2hhcmVwb2ludC5jb20vOnU6L2cvcGVyc29uYWwvc3Rvcl9vbmVkcnZfb25taWNyb3NvZnRfY29tL0VROHNmd2p1WUZkTG8xQS1RelNBdThvQnBDZHB0SUNMOEhyZ0JKSnA1SFBfMWc.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <div style="margin-top: 70px; width: 150px">听点音乐吧</div>
+      <a href="https://sheaxushaoyu.github.io/shea/"
+        ><button
+          class="press yinYing"
+          style="
+            margin-top: 65px;
+            width: 150px;
+            font-weight: 100;
+            font-size: 20px;
+            margin-left: 80px;
+          "
+        >
+          首页
+        </button></a
+      >
+      <a href="https://sheaxushaoyu.github.io/Me/"
+        ><button
+          class="press yinYing"
+          style="
+            margin-top: 65px;
+            width: 150px;
+            font-weight: 100;
+            font-size: 20px;
+            margin-left: 20px;
+          "
+        >
+          关于我
+        </button></a
+      >
+      <a href="https://sheaxushaoyu.github.io/program/"
+        ><button
+          class="press yinYing"
+          style="
+            margin-top: 65px;
+            width: 150px;
+            font-weight: 100;
+            font-size: 20px;
+            margin-left: 20px;
+          "
+        >
+          项目展示
+        </button></a
+      >
+      <a href="https://sheaxushaoyu.github.io/feed/"
+        ><button
+          class="press yinYing"
+          style="
+            margin-top: 65px;
+            width: 150px;
+            font-weight: 100;
+            font-size: 20px;
+            margin-left: 20px;
+          "
+        >
+          投喂
+        </button></a
+      >
+      <a href="https://sheaxushaoyu.github.io/message/"
+        ><button
+          class="press yinYing xuanzhong"
+          style="
+            margin-top: 65px;
+            width: 150px;
+            font-weight: 100;
+            font-size: 20px;
+            margin-left: 20px;
+          "
+        >
+          与我联系
+        </button></a
+      >
+    </div>
+    <!-- 列表项 -->
+            <div class="lieBiaoXiang mgt8 baiSe yinYing" style="margin-bottom: 10px;font-size: 40px;font-weight: 1000px;line-height: 1.9;padding-left: 700px;margin-top: 20px;">微信（电话同号）<br>QQ:3136415610</div>
+            <div class="lieBiaoXiang mgt8 baiSe yinYing" style="margin-bottom: 10px;font-size: 40px;font-weight: 1000px;line-height: 1.9;padding-left: 700px;margin-top: 20px;">邮箱：3136415610@qq.com</div>
+            <a href="https://imgse.com/i/pkIVwIf"><img src="https://s21.ax1x.com/2024/07/16/pkIVwIf.jpg" alt="pkIVwIf.jpg" border="0" style="width: 1700px;height: 800px;margin-top: 20px;"/></a>
+          </div>
   </body>
 </html>
